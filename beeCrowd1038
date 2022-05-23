@@ -1,0 +1,36 @@
+import java.io.IOException;
+import java.util.Scanner;
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        Scanner sc = new Scanner(System.in);
+
+        int codigo = sc.nextInt();
+        int qtd = sc.nextInt();
+
+        if (codigo == 1) {
+
+            double cachorroQuente = qtd * 4.00;
+            System.out.printf("Total: R$ %.2f\n", cachorroQuente);
+
+        } else if (codigo == 2) {
+            double xSalada = qtd * 4.50;
+            System.out.printf("Total: R$ %.2f\n", xSalada);
+
+        } else if (codigo == 3) {
+            double xBacon = qtd * 5.00;
+            System.out.printf("Total: R$ %.2f\n", xBacon);
+
+        } else if (codigo == 4) {
+            double torrada = qtd * 2.00;
+            System.out.printf("Total: R$ %.2f\n", torrada);
+
+        } else if (codigo == 5) {
+            double refrigerante = qtd * 1.50;
+            System.out.printf("Total: R$ %.2f\n", refrigerante);
+            
+        }    
+ 
+    }
+ 
+}
